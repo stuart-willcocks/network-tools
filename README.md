@@ -2,27 +2,27 @@
 
 Given an IPv4 network address and associated CIDR suffix, this program will display the following:
 
-network block size
-netmask (dotted decimal notation with dotted binary as an option)
-network address (dotted decimal notation with dotted binary as an option)
-first host address (dotted decimal notation with dotted binary as an option)
-last host address (dotted decimal notation with dotted binary as an option)
-broadcast address (dotted decimal notation with dotted binary as an option)
-next network address (dotted decimal notation with dotted binary as an option)
+* network block size
+* netmask (dotted decimal notation with dotted binary as an option)
+* network address (dotted decimal notation with dotted binary as an option)
+* first host address (dotted decimal notation with dotted binary as an option)
+* last host address (dotted decimal notation with dotted binary as an option)
+* broadcast address (dotted decimal notation with dotted binary as an option)
+* next network address (dotted decimal notation with dotted binary as an option)
 
 Optionally, the individual host address can be displayed
 
 ## Examples
 netcheck.py 150.75.0.0/28
 
-Output:
-block size      16
-netmask         255.255.255.240
-network         150.75.0.0
-first host      150.75.0.1
-last host       150.75.0.14
-broadcast       150.75.0.15
-next network    150.75.0.16
+* Output:
+* block size      16
+* netmask         255.255.255.240
+* network         150.75.0.0
+* first host      150.75.0.1
+* last host       150.75.0.14
+* broadcast       150.75.0.15
+* next network    150.75.0.16
 
 netcheck.py 150.75.0.0/28 --hosts
 
